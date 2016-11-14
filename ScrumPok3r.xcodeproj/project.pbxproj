@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		D7433DF31DDA346000D38BEE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7433DF21DDA346000D38BEE /* AppDelegate.swift */; };
-		D7433DF51DDA346000D38BEE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7433DF41DDA346000D38BEE /* ViewController.swift */; };
+		D7433DF51DDA346000D38BEE /* Pok3rCardsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7433DF41DDA346000D38BEE /* Pok3rCardsViewController.swift */; };
 		D7433DF81DDA346000D38BEE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D7433DF61DDA346000D38BEE /* Main.storyboard */; };
 		D7433DFA1DDA346000D38BEE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D7433DF91DDA346000D38BEE /* Assets.xcassets */; };
 		D7433DFD1DDA346000D38BEE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D7433DFB1DDA346000D38BEE /* LaunchScreen.storyboard */; };
@@ -17,7 +17,7 @@
 /* Begin PBXFileReference section */
 		D7433DEF1DDA346000D38BEE /* ScrumPok3r.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ScrumPok3r.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D7433DF21DDA346000D38BEE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		D7433DF41DDA346000D38BEE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D7433DF41DDA346000D38BEE /* Pok3rCardsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pok3rCardsViewController.swift; sourceTree = "<group>"; };
 		D7433DF71DDA346000D38BEE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D7433DF91DDA346000D38BEE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D7433DFC1DDA346000D38BEE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -54,14 +54,22 @@
 		D7433DF11DDA346000D38BEE /* ScrumPok3r */ = {
 			isa = PBXGroup;
 			children = (
-				D7433DF21DDA346000D38BEE /* AppDelegate.swift */,
-				D7433DF41DDA346000D38BEE /* ViewController.swift */,
+				D7433E041DDA349200D38BEE /* SupportingFiles */,
+				D7433DF41DDA346000D38BEE /* Pok3rCardsViewController.swift */,
 				D7433DF61DDA346000D38BEE /* Main.storyboard */,
+			);
+			path = ScrumPok3r;
+			sourceTree = "<group>";
+		};
+		D7433E041DDA349200D38BEE /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				D7433DF21DDA346000D38BEE /* AppDelegate.swift */,
 				D7433DF91DDA346000D38BEE /* Assets.xcassets */,
 				D7433DFB1DDA346000D38BEE /* LaunchScreen.storyboard */,
 				D7433DFE1DDA346000D38BEE /* Info.plist */,
 			);
-			path = ScrumPok3r;
+			name = SupportingFiles;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,7 +145,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D7433DF51DDA346000D38BEE /* ViewController.swift in Sources */,
+				D7433DF51DDA346000D38BEE /* Pok3rCardsViewController.swift in Sources */,
 				D7433DF31DDA346000D38BEE /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
