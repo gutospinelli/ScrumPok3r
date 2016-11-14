@@ -223,7 +223,7 @@
         <!--Card-->
         <scene sceneID="rm0-2B-Bhz">
             <objects>
-                <viewController title="Card" id="N6K-Sv-EbY" customClass="Pok3rCardsViewController" customModule="ScrumPok3r" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Card" id="N6K-Sv-EbY" customClass="CardViewController" customModule="ScrumPok3r" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="vSd-BF-Ela"/>
                         <viewControllerLayoutGuide type="bottom" id="Zje-on-kOq"/>
@@ -235,7 +235,7 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WQ4-QH-3mo">
                                 <rect key="frame" x="16" y="93" width="343" height="535"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="100"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="250"/>
                                 <color key="textColor" red="0.50196081400000003" green="0.25098040700000002" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -243,7 +243,7 @@
                         <color key="backgroundColor" red="1" green="0.80000001190000003" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <connections>
-                        <outlet property="lbSelectedCard" destination="WQ4-QH-3mo" id="41K-0E-Yx5"/>
+                        <outlet property="lbCardSelected" destination="WQ4-QH-3mo" id="Xcw-ni-HyC"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="N1X-hv-paG" userLabel="First Responder" sceneMemberID="firstResponder"/>

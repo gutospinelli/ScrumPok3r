@@ -44,10 +44,14 @@ class Pok3rCardsViewController: UIViewController {
         cardSelected = false
         buttonSelected = nil
     }
-
-
-    @IBOutlet weak var lbSelectedCard: UILabel!
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if cardSelected {
+            let cardVC : CardViewController = segue.destination as! CardViewController
+            cardVC.cardSelected = (buttonSelected?.titleLabel?.text)!
+        }
+    }
     
+
 }
 
