@@ -7,12 +7,24 @@
 //
 
 import UIKit
+import GoogleMobileAds
 
-class Pok3rCardsViewController: UIViewController {
+class Pok3rCardsViewController: UIViewController, GADBannerViewDelegate {
 
     var cardSelected = false
     var buttonSelected: UIButton?
+  
+    @IBOutlet weak var bannerView: GADBannerView!
+  
+    override func viewDidLoad() {
+      super.viewDidLoad()
     
+      bannerView.adUnitID = "ca-app-pub-3940256099942544/2934735716"
+      bannerView.rootViewController = self
+      bannerView.delegate = self
+      bannerView.load(GADRequest())
+    }
+  
     @IBAction func SelectCard(_ sender: UIButton) {
         if cardSelected {
             if buttonSelected != sender {
@@ -51,7 +63,17 @@ class Pok3rCardsViewController: UIViewController {
             cardVC.cardSelected = (buttonSelected?.titleLabel?.text)!
         }
     }
+  
+  func adViewDidReceiveAd(_ bannerView: GADBannerView) {
+    print("Banner loaded successfully")
     
+  }
+  
+  func adView(_ bannerView: GADBannerView, didFailToReceiveAdWithError error: GADRequestError) {
+    print("Fail to receive ads")
+    print(error)
+  }
+  
 
 }
 

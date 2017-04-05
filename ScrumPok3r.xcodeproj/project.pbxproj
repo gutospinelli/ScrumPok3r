@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2684A916EBB239BBF2440ED9 /* Pods_ScrumPok3r.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9B9000254FFDB48B89F5881 /* Pods_ScrumPok3r.framework */; };
 		D7433DF31DDA346000D38BEE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7433DF21DDA346000D38BEE /* AppDelegate.swift */; };
 		D7433DF51DDA346000D38BEE /* Pok3rCardsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7433DF41DDA346000D38BEE /* Pok3rCardsViewController.swift */; };
 		D7433DF81DDA346000D38BEE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D7433DF61DDA346000D38BEE /* Main.storyboard */; };
@@ -16,6 +17,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5219C6FBC5D142FA5A01753D /* Pods-ScrumPok3r.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ScrumPok3r.release.xcconfig"; path = "Pods/Target Support Files/Pods-ScrumPok3r/Pods-ScrumPok3r.release.xcconfig"; sourceTree = "<group>"; };
+		B9B9000254FFDB48B89F5881 /* Pods_ScrumPok3r.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ScrumPok3r.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D7433DEF1DDA346000D38BEE /* ScrumPok3r.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ScrumPok3r.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D7433DF21DDA346000D38BEE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D7433DF41DDA346000D38BEE /* Pok3rCardsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pok3rCardsViewController.swift; sourceTree = "<group>"; };
@@ -24,6 +27,7 @@
 		D7433DFC1DDA346000D38BEE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D7433DFE1DDA346000D38BEE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D7433E051DDA47D800D38BEE /* CardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardViewController.swift; sourceTree = "<group>"; };
+		DAA15CBB2546013DDDC46A8C /* Pods-ScrumPok3r.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ScrumPok3r.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ScrumPok3r/Pods-ScrumPok3r.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +35,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2684A916EBB239BBF2440ED9 /* Pods_ScrumPok3r.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9B8E1D8227B8DC3C15055DD3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B9B9000254FFDB48B89F5881 /* Pods_ScrumPok3r.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B035B5CB19AC7CD54E12A1B7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DAA15CBB2546013DDDC46A8C /* Pods-ScrumPok3r.debug.xcconfig */,
+				5219C6FBC5D142FA5A01753D /* Pods-ScrumPok3r.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		D7433DE61DDA345F00D38BEE = {
 			isa = PBXGroup;
 			children = (
 				D7433DF11DDA346000D38BEE /* ScrumPok3r */,
 				D7433DF01DDA346000D38BEE /* Products */,
+				B035B5CB19AC7CD54E12A1B7 /* Pods */,
+				9B8E1D8227B8DC3C15055DD3 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -82,9 +106,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D7433E011DDA346000D38BEE /* Build configuration list for PBXNativeTarget "ScrumPok3r" */;
 			buildPhases = (
+				D59FA3009E9BAFB1DA64F561 /* [CP] Check Pods Manifest.lock */,
 				D7433DEB1DDA345F00D38BEE /* Sources */,
 				D7433DEC1DDA345F00D38BEE /* Frameworks */,
 				D7433DED1DDA345F00D38BEE /* Resources */,
+				98CF89FD9C116A74D9458404 /* [CP] Embed Pods Frameworks */,
+				1F8AF198049F4959E226D847 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -102,7 +129,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0810;
-				LastUpgradeCheck = 0810;
+				LastUpgradeCheck = 0830;
 				ORGANIZATIONNAME = "Augusto Spinelli";
 				TargetAttributes = {
 					D7433DEE1DDA345F00D38BEE = {
@@ -142,6 +169,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1F8AF198049F4959E226D847 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ScrumPok3r/Pods-ScrumPok3r-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		98CF89FD9C116A74D9458404 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ScrumPok3r/Pods-ScrumPok3r-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D59FA3009E9BAFB1DA64F561 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		D7433DEB1DDA345F00D38BEE /* Sources */ = {
@@ -194,6 +269,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -244,6 +320,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -271,6 +348,7 @@
 		};
 		D7433E021DDA346000D38BEE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DAA15CBB2546013DDDC46A8C /* Pods-ScrumPok3r.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = S38FCA8567;
@@ -284,6 +362,7 @@
 		};
 		D7433E031DDA346000D38BEE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5219C6FBC5D142FA5A01753D /* Pods-ScrumPok3r.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = S38FCA8567;
@@ -314,6 +393,7 @@
 				D7433E031DDA346000D38BEE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
