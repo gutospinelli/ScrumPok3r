@@ -18,6 +18,11 @@ class Pok3rCardsViewController: UIViewController, GADBannerViewDelegate {
   
     override func viewDidLoad() {
       super.viewDidLoad()
+      
+      self.navigationController?.navigationBar.barTintColor = view.backgroundColor
+      //self.navigationController?.navigationBar.barTintColor = UIColor(colorLiteralRed: 29.0/255.0, green: 149.0/255.0, blue: 174.0/255.0, alpha: 1.0)
+      self.navigationController?.navigationBar.tintColor = #colorLiteral(red: 0.5787474513, green: 0.3215198815, blue: 0, alpha: 1)
+      self.navigationController!.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName: #colorLiteral(red: 0.5787474513, green: 0.3215198815, blue: 0, alpha: 1)]
     
       bannerView.adUnitID = "ca-app-pub-3940256099942544/2934735716"
       bannerView.rootViewController = self
